@@ -1,0 +1,7 @@
+node_modules/
+typedocs/
+*.tgz
+.DS_Store
+.vscode
+index.js
+index.d.ts

@@ -1,0 +1,36 @@
+{
+  "name": "picasso",
+  "version": "1.0.0",
+  "description": "General purpose deterministic identity icon library, mostly for vechain thor addresses",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libotony/picasso.git"
+  },
+  "keywords": [
+    "vechain",
+    "address",
+    "blocky",
+    "ident",
+    "identicons"
+  ],
+  "author": "tony.li@vechain.com",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/libotony/picasso/issues"
+  },
+  "homepage": "https://github.com/libotony/picasso#readme",
+  "devDependencies": {
+    "@types/mersenne-twister": "^1.1.2",
+    "@types/node": "^10.12.10",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "mersenne-twister": "^1.1.0"
+  }
+}

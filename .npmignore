@@ -1,0 +1,10 @@
+.vscode/
+*.ts
+*.tgz
+tsconfig.json
+tslint.json
+index.html
+.nojekyll
+coverage
+.nyc_output
+.travis.yml

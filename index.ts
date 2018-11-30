@@ -3,7 +3,7 @@
 'use strict'
 import MersenneTwister = require('mersenne-twister')
 
-const colors = ["#f44336", "#e91e63", "#9c27b0", "#673ab7", "#3f51b5", "#2196f3", "#03a9f4", "#00bcd4", "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ffc107", "#ff9800", "#ff5722"]
+const allColors = ["#f44336", "#e91e63", "#9c27b0", "#673ab7", "#3f51b5", "#2196f3", "#03a9f4", "#00bcd4", "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ffc107", "#ff9800", "#ff5722"]
 
 const hash = function(str: string) {
     if (str.length === 0) {
@@ -21,6 +21,7 @@ export function picasso(content: string) {
     const seed = hash(content)
     const rand = new MersenneTwister(seed)
 
+    const colors = allColors.slice()
     const genColor = () => {
         const idx = Math.floor(colors.length * rand.random())
         return colors.splice(idx, 1)[0]

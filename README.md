@@ -4,7 +4,7 @@
 
 General purpose deterministic identity icon library in svg format, mostly for vechain thor addresses.
 
-![sample](./sample.jpg)
+![sample](./sample.png)
 
 ## Install
 

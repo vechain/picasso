@@ -1,5 +1,7 @@
 # Picasso
 
+[![npm version](https://badge.fury.io/js/%40vechain%2Fpicasso.svg)](https://badge.fury.io/js/%40vechain%2Fpicasso)
+
 General purpose deterministic identity icon library in svg format, mostly for vechain thor addresses.
 
 ![sample](./sample.jpg)

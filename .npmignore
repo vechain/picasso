@@ -1,5 +1,5 @@
 .vscode/
-*.ts
+index.ts
 *.tgz
 tsconfig.json
 tslint.json

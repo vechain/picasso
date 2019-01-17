@@ -22,7 +22,7 @@ yarn add @vechain/picasso
 
 ``` javascript
 
-import { picasso } from ' @vechain/picasso'
+import { picasso } from '@vechain/picasso'
 
 const div = document.createElement("div")
 const svg = picasso('0xf6e78a5584c06e2dec5c675d357f050a5402a730')

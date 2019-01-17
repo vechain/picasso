@@ -13,7 +13,7 @@ General purpose deterministic identity icon library in svg format, mostly for ve
 npm install --save @vechain/picasso
 
 # Yarn
-yarn add --save @vechain/picasso
+yarn add @vechain/picasso
 ```
 
 ## Usage

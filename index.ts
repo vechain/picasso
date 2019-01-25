@@ -3,7 +3,22 @@
 'use strict'
 import MersenneTwister = require('mersenne-twister')
 
-const allColors = ["#f44336", "#e91e63", "#9c27b0", "#673ab7", "#3f51b5", "#2196f3", "#03a9f4", "#00bcd4", "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ffc107", "#ff9800", "#ff5722"]
+const allColors = [
+    'rgb(226,27,12)',
+    'rgb(192,19,78)',
+    'rgb(125,31,141)',
+    'rgb(82,46,146)',
+    'rgb(50,65,145)',
+    'rgb(11,122,209)',
+    'rgb(2,135,195)',
+    'rgb(0,150,170)',
+    'rgb(0,120,109)',
+    'rgb(61,140,64)',
+    'rgb(112,162,54)',
+    'rgb(174,188,33)',
+    'rgb(210,157,0)',
+    'rgb(204,122,0)',
+    'rgb(231,55,0)']
 
 const hash = function(str: string) {
     if (str.length === 0) {

@@ -1,6 +1,6 @@
 {
   "name": "@vechain/picasso",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "General purpose deterministic identity icon library in svg format, mostly for vechain thor addresses",
   "main": "index.js",
   "typings": "index.d.ts",

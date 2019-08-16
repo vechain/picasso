@@ -55,7 +55,7 @@ export function picasso(content: string) {
         const cy = cys.splice(Math.floor(cys.length * rand.random()), 1)[0]
         const fill = genColor()
 
-        shapesStr += `<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}" opacity="0.5"/>`
+        shapesStr += `<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}" opacity="0.9"/>`
     }
     return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${bgStr}${shapesStr}</svg>`
 }

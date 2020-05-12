@@ -8,4 +8,6 @@ index.html
 coverage
 .nyc_output
 .travis.yml
-sample.jpg
+sample.png
+demo.html
+rollup.config.js

@@ -4,21 +4,21 @@
 import MersenneTwister = require('mersenne-twister')
 
 const allColors = [
-    'rgb(226,27,12)',
-    'rgb(192,19,78)',
-    'rgb(125,31,141)',
-    'rgb(82,46,146)',
-    'rgb(50,65,145)',
-    'rgb(11,122,209)',
-    'rgb(2,135,195)',
-    'rgb(0,150,170)',
-    'rgb(0,120,109)',
-    'rgb(61,140,64)',
-    'rgb(112,162,54)',
-    'rgb(174,188,33)',
-    'rgb(210,157,0)',
-    'rgb(204,122,0)',
-    'rgb(231,55,0)']
+    'rgb(244, 67, 54)',
+    'rgb(233, 30, 99)',
+    'rgb(156, 39, 176)',
+    'rgb(103, 58, 183)',
+    'rgb(63, 81, 181)',
+    'rgb(33, 150, 243)',
+    'rgb(3, 169, 244)',
+    'rgb(0, 188, 212)',
+    'rgb(0, 150, 136)',
+    'rgb(76, 175, 80)',
+    'rgb(139, 195, 74)',
+    'rgb(205, 220, 57)',
+    'rgb(255, 193, 7)',
+    'rgb(255, 152, 0)',
+    'rgb(255, 87, 34)']
 
 const hash = function(str: string) {
     if (str.length === 0) {
@@ -43,6 +43,7 @@ export function picasso(content: string) {
     }
 
     const bgStr = `<rect fill="${genColor()}" width="100" height="100"/>`
+    const style = `<style>circle{mix-blend-mode:soft-light;}</style>`
     let shapesStr = ''
     const layers = 3
     const rs = [35, 40, 45, 50, 55, 60]
@@ -55,7 +56,7 @@ export function picasso(content: string) {
         const cy = cys.splice(Math.floor(cys.length * rand.random()), 1)[0]
         const fill = genColor()
 
-        shapesStr += `<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}" opacity="0.9"/>`
+        shapesStr += `<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}"/>`
     }
-    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${bgStr}${shapesStr}</svg>`
+    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${style}${bgStr}${shapesStr}</svg>`
 }

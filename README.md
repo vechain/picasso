@@ -8,6 +8,16 @@ General purpose deterministic identity icon library in svg format, mostly for ve
 
 ## Install
 
+## By CDN
+
+Picasso is available at [jsDelivr](https://www.jsdelivr.com/package/npm/@vechain/picasso), you can import it directly.
+
+``` html
+<script src="https://cdn.jsdelivr.net/npm/@vechain/picasso@latest/index.min.js"></script>
+```
+
+## By NPM
+
 ``` bash
 # NPM
 npm install --save @vechain/picasso
@@ -18,11 +28,8 @@ yarn add @vechain/picasso
 
 ## Usage
 
-### Vanilla JS
-
 ``` javascript
-
-import { picasso } from '@vechain/picasso'
+import { picasso } from '@vechain/picasso' // not required if imported from script tag
 
 const div = document.createElement("div")
 const svg = picasso('0xf6e78a5584c06e2dec5c675d357f050a5402a730')

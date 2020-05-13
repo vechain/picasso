@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/libotony/picasso.git"
+    "url": "git+https://github.com/vechain/picasso.git"
   },
   "keywords": [
     "vechain",
@@ -23,9 +23,9 @@
   "author": "tony.li@vechain.com",
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/libotony/picasso/issues"
+    "url": "https://github.com/vechain/picasso/issues"
   },
-  "homepage": "https://github.com/libotony/picasso#readme",
+  "homepage": "https://github.com/vechain/picasso#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-node-resolve": "^7.1.3",

@@ -13,7 +13,7 @@ General purpose deterministic identity icon library in svg format, mostly for ve
 Picasso is available at [jsDelivr](https://www.jsdelivr.com/package/npm/@vechain/picasso), you can import it directly.
 
 ``` html
-<script src="https://cdn.jsdelivr.net/npm/@vechain/picasso@latest/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@vechain/picasso@2/dist/index.all.min.js"></script>
 ```
 
 ## By NPM

@@ -42,21 +42,21 @@ export function picasso(content: string) {
         return colors.splice(idx, 1)[0]
     }
 
-    const bgStr = `<rect fill="${genColor()}" width="100" height="100"/>`
+    const bg = `<rect fill="${genColor()}" width="100" height="100"/>`
     const style = `<style>circle{mix-blend-mode:soft-light;}</style>`
-    let shapesStr = ''
+    const shapes = [] as string[]
     const layers = 3
     const rs = [35, 40, 45, 50, 55, 60]
     const cxs = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
     const cys = [30, 40, 50, 60, 70]
 
+    shapes.push('<rect fill="black" width="100" height="100" style="mix-blend-mode:soft-light;"/>')
     for (let i = 0; i < layers; i++) {
         const r = rs.splice(Math.floor(rs.length * rand.random()), 1)[0]
         const cx = cxs.splice(Math.floor(cxs.length * rand.random()), 1)[0]
         const cy = cys.splice(Math.floor(cys.length * rand.random()), 1)[0]
         const fill = genColor()
-
-        shapesStr += `<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}"/>`
+        shapes.push(`<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}"/>`)
     }
-    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${style}${bgStr}${shapesStr}</svg>`
+    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${style}${bg}${shapes.join('')}</svg>`
 }

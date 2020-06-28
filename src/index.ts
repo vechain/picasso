@@ -58,5 +58,5 @@ export function picasso(content: string) {
 
         shapesStr += `<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}"/>`
     }
-    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">${style}${bgStr}${shapesStr}</svg>`
+    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">${style}${bgStr}${shapesStr}</svg>`
 }

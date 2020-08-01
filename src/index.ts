@@ -3,7 +3,7 @@
 'use strict'
 import MersenneTwister = require('mersenne-twister')
 
-const allColors = [
+const defaultColors = [
     'rgb(244, 67, 54)',
     'rgb(233, 30, 99)',
     'rgb(156, 39, 176)',
@@ -32,11 +32,12 @@ const hash = function(str: string) {
     return h
 }
 
-export function picasso(content: string) {
+export function picasso(content: string, colors: string[] = defaultColors) {
     const seed = hash(content)
     const rand = new MersenneTwister(seed)
 
-    const colors = allColors.slice()
+    colors = colors.slice()
+
     const genColor = () => {
         const idx = Math.floor(colors.length * rand.random())
         return colors.splice(idx, 1)[0]

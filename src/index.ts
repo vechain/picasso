@@ -44,7 +44,7 @@ export function picasso(content: string, colors: string[] = defaultColors) {
     }
 
     const bgStr = `<rect fill="${genColor()}" width="100" height="100"/>`
-    const style = `<style>circle{mix-blend-mode:soft-light;}</style>`
+    const style = `<style>.picasso circle{mix-blend-mode:soft-light;}</style>`
     let shapesStr = ''
     const layers = 3
     const rs = [35, 40, 45, 50, 55, 60]
@@ -59,5 +59,5 @@ export function picasso(content: string, colors: string[] = defaultColors) {
 
         shapesStr += `<circle r="${r}" cx="${cx}" cy="${cy}" fill="${fill}"/>`
     }
-    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">${style}${bgStr}${shapesStr}</svg>`
+    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="picasso" width="100" height="100" viewBox="0 0 100 100">${style}${bgStr}${shapesStr}</svg>`
 }

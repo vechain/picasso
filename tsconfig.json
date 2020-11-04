@@ -2,22 +2,13 @@
     "compilerOptions": {
         "target": "es6",
         "module": "commonjs",
-        "strictNullChecks": true,
+        "strict": true,
         "outDir": "./dist",
-        "noImplicitAny": true,
-        "removeComments": false,
-        "preserveConstEnums": true,
         "inlineSourceMap": true,
-        "allowSyntheticDefaultImports": true,
-        "declaration": true,
-        "types": [
-            "node"
-        ]
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true
     },
-    "exclude": [
-        "node_modules"
-    ],
     "include": [
-        "src/**/*.ts"
+        "./src"
     ]
 }

@@ -1,7 +1,6 @@
-
 // see https://github.com/danfinlay/jazzicon
-'use strict'
-import MersenneTwister = require('mersenne-twister')
+
+import MersenneTwister from 'mersenne-twister'
 
 const defaultColors = [
     'rgb(244, 67, 54)',
@@ -20,7 +19,7 @@ const defaultColors = [
     'rgb(255, 152, 0)',
     'rgb(255, 87, 34)']
 
-const hash = function(str: string) {
+const hash = function (str: string) {
     if (str.length === 0) {
         return 0
     }
@@ -32,15 +31,16 @@ const hash = function(str: string) {
     return h
 }
 
-export function picasso(content: string, colors: string[] = defaultColors) {
+export function picasso(content: string, colors?: string[]) {
+    colors = colors || defaultColors
     const seed = hash(content)
     const rand = new MersenneTwister(seed)
 
     colors = colors.slice()
 
     const genColor = () => {
-        const idx = Math.floor(colors.length * rand.random())
-        return colors.splice(idx, 1)[0]
+        const idx = Math.floor(colors!.length * rand.random())
+        return colors!.splice(idx, 1)[0]
     }
 
     const bgStr = `<rect fill="${genColor()}" width="100" height="100"/>`
@@ -61,3 +61,5 @@ export function picasso(content: string, colors: string[] = defaultColors) {
     }
     return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="picasso" width="100" height="100" viewBox="0 0 100 100">${style}${bgStr}${shapesStr}</svg>`
 }
+
+export default picasso

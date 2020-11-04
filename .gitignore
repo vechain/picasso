@@ -4,4 +4,5 @@ typedocs/
 .DS_Store
 .vscode
 dist/
+esm/
 

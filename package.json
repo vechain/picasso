@@ -34,7 +34,6 @@
   },
   "homepage": "https://github.com/vechain/picasso#readme",
   "devDependencies": {
-    "@types/mersenne-twister": "^1.1.2",
     "typescript": "^3.9.7",
     "webpack": "^5.2.0",
     "webpack-cli": "^4.1.0"

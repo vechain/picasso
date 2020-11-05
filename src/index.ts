@@ -1,6 +1,6 @@
 // see https://github.com/danfinlay/jazzicon
 
-import MersenneTwister from 'mersenne-twister'
+const MersenneTwister = require('mersenne-twister')
 
 const defaultColors = [
     'rgb(244, 67, 54)',
